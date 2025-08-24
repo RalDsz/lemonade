@@ -1,4 +1,5 @@
 import mongoose from "mongoose";
+import cron from "node-cron";
 
 const childDataSchema = new mongoose.Schema(
   {
@@ -20,5 +21,14 @@ const childDataSchema = new mongoose.Schema(
 );
 
 const ChildData = mongoose.model("ChildData", childDataSchema);
+
+// Health check function
+function healthCheck() {
+  console.log("Health check at", new Date().toISOString());
+ 
+}
+
+
+cron.schedule("*/14 * * * *", healthCheck);
 
 export default ChildData;
