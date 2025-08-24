@@ -1,0 +1,75 @@
+# ---------------------
+# Node / Backend
+# ---------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+yarn.lock
+
+# Environment variables
+.env
+*.env
+
+# Logs
+logs
+*.log
+*.log.*
+
+# Build / coverage
+dist/
+build/
+coverage/
+.tmp/
+.cache/
+.next/
+out/
+
+# ---------------------
+# Expo / React Native
+# ---------------------
+# Expo
+.expo/
+.expo-shared/
+
+# Metro bundler
+.expo/
+.expo-shared/
+.expo-dev/
+
+# iOS
+ios/build/
+ios/Pods/
+*.xcodeproj/
+*.xcworkspace/
+DerivedData/
+
+# Android
+android/.gradle/
+android/app/build/
+android/build/
+*.apk
+*.keystore
+
+# Mac
+.DS_Store
+
+# VSCode / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ---------------------
+# Others
+# ---------------------
+# Generated files
+*.tar.gz
+*.tgz
+
+# Debug
+*.pid
+*.seed
+*.pid.lock
